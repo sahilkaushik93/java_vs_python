@@ -7,3 +7,14 @@ public class prog2 {
         System.out.println("1+2="+c);
     }
 }
+
+// single line comment
+
+/*
+ multiple line comment
+ */
+
+
+
+
+ 
