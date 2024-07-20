@@ -16,5 +16,11 @@ public class prog4 {
         for(int i = 0; i < 5; i++){
             System.out.println("Java for loop op:"+i);
         }
+
+        // Conditional WHILE loop:-
+        while(x>0){
+            System.out.println("Java while loop:"+x);
+            x = x - 1;
+        }
     }
 }

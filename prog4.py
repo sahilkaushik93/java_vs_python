@@ -8,5 +8,9 @@ else:
 
 # Conditional FOR:-
 for i in range(5):
-    print(f"Python for loop op: {i}")
+    print(f"Python for loop: {i}")
 
+# Conditional WHILE:-
+while x>0:
+    print(f"python while loop: {x}")
+    x = x-1
