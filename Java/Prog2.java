@@ -40,7 +40,12 @@ public class Prog2 {
     System.out.print("****\n");
     
 
-    // DEFINING VARIABLES
+    // DEFINING VARIABLES    
+    // DEFINING DATATYPES
+    /*
+     * 8 Primitive: byte(8 bit/1bytes), short, char(2 bytes), boolean(1 byte), int(4 bytes), long(8 bytes), float(4 bytes), double(8 bytes).
+     * 5 Non-primitive: String, Array, Class, Object, Interface.
+     */
     int a = 25;
     int b = 10;
     String name = "Tony Stark";
@@ -49,14 +54,6 @@ public class Prog2 {
     System.out.println(c);
     System.out.println(name);
 
-    
-    // DEFINING DATATYPES
-    /*
-     * 8 Primitive: byte(8 bit/1bytes), short, char(2 bytes), boolean(1 byte), int(4 bytes), long(8 bytes), float(4 bytes), double(8 bytes).
-     * 5 Non-primitive: String, Array, Class, Object, Interface.
-     */
-
-     
 
     // TAKING INPUT
     }
