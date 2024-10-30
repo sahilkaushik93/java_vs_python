@@ -5,6 +5,8 @@
  * How to take Input ?
  */
 
+import java.util.*;
+
 public class Prog2 {
     public static void main(String[] args) {
     
@@ -56,5 +58,21 @@ public class Prog2 {
 
 
     // TAKING INPUT
+    /*
+     * In Java, we use 'Scanner' Class 
+     * Scanner Class is present in 'Java.util' package: This package we import outside main class
+     * We use 'System.in' to take input
+     * next() function takes 'single token or single word' input
+     * nextLine() function takes 'full line token' input
+     * nextInt() takes integer input
+     * nextFloat() takes floating input
+     * nextDouble() takes double 
+     */
+    Scanner sc = new Scanner(System.in);
+    String name1 = sc.next();
+    System.out.println(name1);
+    int a1 = sc.nextInt();
+    System.out.println(a1);
+    sc.close();
     }
 }
