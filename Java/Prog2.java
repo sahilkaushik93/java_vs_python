@@ -20,7 +20,7 @@ public class Prog2 {
      * 
      * "System.out.println":
      * By Default: 'println' function provides feature of next line.
-     * shortcut key to get it: sout + TAB
+     * shortcut key to get it: sout + TAB or sysout + TAB
      * 
      * 
      * Related Question:
