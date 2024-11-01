@@ -34,6 +34,11 @@
  *                        4 5 6
  *                        7 8 9 10
  *                        11 12 13 14 15
+ * 9. 0-1 Triangle => 1
+ *                    0 1
+ *                    1 0 1
+ *                    0 1 0 1
+ *                    1 0 1 0 1
  * Note: Rows -> Outer Loops; Cols -> Inner Loops
  */
 
@@ -163,11 +168,33 @@ public class Prog5 {
 
         // 8. Floyd's Triangle: 
         // It will print series of star from one row to another row(COVERING ROWS)
+        int n = 1;
+        for(int i = 1;i <= 5;i++){
+            // It will print n stars in a single row(COVERING COLS)
+            for(int j = 1;j <= i;j++){
+                System.out.print(n+" ");  
+                n++;  
+            }
+            
+            System.out.println();
+        }
+
+        System.out.println("\n__________0-1 Triangle_________\n");
+
+        // 9. 0-1 Triangle: 
+        // Here, if i+j = Even then print 1 else print 0.
+        // It will print 0 or 1 from one row to another row(COVERING ROWS)
         for(int i = 1;i <= row;i++){
             // It will print n stars in a single row(COVERING COLS)
             for(int j = 1;j <= i;j++){
-                    System.out.print(j*(i-1)+" ");
+                if((i+j)%2==0){
+                    System.out.print(1);
+                }else{
+                    System.out.print(0);
+                }  
+                  
             }
+            
             System.out.println();
         }
 
