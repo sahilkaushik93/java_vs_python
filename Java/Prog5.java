@@ -16,6 +16,24 @@
  *                              ***
  *                              **
  *                              *
+ * 5. Inverted Half Pyramid (rotated by 180 deg.)==>    *
+ *                                                     **
+ *                                                    ***
+ *                                                   ****
+ * 6. Half Pyramid with Numbers => 1
+ *                                 1 2
+ *                                 1 2 3
+ *                                 1 2 3 4
+ *                                 1 2 3 4 5  
+ * 7. Inverted Half Pyramid ==> 1 2 3 4
+ *                              1 2 3
+ *                              1 2
+ *                              1
+ * 8. Floyd's Triangle => 1
+ *                        2 3
+ *                        4 5 6
+ *                        7 8 9 10
+ *                        11 12 13 14 15
  * Note: Rows -> Outer Loops; Cols -> Inner Loops
  */
 
@@ -63,7 +81,7 @@ public class Prog5 {
 
         System.out.println("\n__________Half Pyramid_________\n");
 
-        // 3. HOLLOW RECTANGLE: 
+        // 3. HALF PYRAMID: 
         // Note: Stars printed are related to row number i.e. if row = 3 then 3 stars are printed and so on.
         // It will print series of star from one row to another row(COVERING ROWS)
         for(int i = 1;i <= row;i++){
@@ -76,7 +94,7 @@ public class Prog5 {
 
         System.out.println("\n__________Inverted Half Pyramid_________\n");
 
-        // 3. INVERTED HOLLOW RECTANGLE: 
+        // 4. INVERTED HALF PYRAMID: 
         // Note: Stars printed are related to inverse row number i.e. if row = 3 then (total rows - 3)+1 stars are printed and so on.
         // It will print series of star from one row to another row(COVERING ROWS)
         for(int i = 1;i <= row;i++){
@@ -96,7 +114,62 @@ public class Prog5 {
         //     System.out.println();
         // }
 
+        System.out.println("\n__________Inverted Half Pyramid - 180 degrees_________\n");
 
+        // 5. INVERTED HALF PYRAMID - ROTATED BY 180 DEGREE: 
+        // Note: Pattern contains (row-i) space & i star, thus 2 inner loops required.
+        // Outer Loop
+        for(int i = 1;i <= row;i++){
+
+            // Inner Loop 1 -> to print "space"
+            for(int j = 1;j <= row-i;j++){
+                System.out.print(" ");
+            }
+
+            // Inner Loop 2 -> to print "*"
+            for(int j = 1;j <= i;j++){
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+        System.out.println("\n__________Half Pyramid With Numbers_________\n");
+
+        // 6. HALF PYRAMID WITH NUMBERS: 
+        // Note: Stars printed are related to row number i.e. if row = 3 then 3 stars are printed and so on.
+        // It will print series of star from one row to another row(COVERING ROWS)
+        for(int i = 1;i <= row;i++){
+            // It will print n stars in a single row(COVERING COLS)
+            for(int j = 1;j <= i;j++){
+                    System.out.print(j);
+            }
+            System.out.println();
+        }
+
+        System.out.println("\n__________Inverted Half Pyramid With Numbers_________\n");
+
+        // 7. INVERTED HALF PYRAMID WITH NUMBERS: 
+        // It will print series of star from one row to another row(COVERING ROWS)
+        for(int i = row;i >= 1;i--){
+            // It will print n stars in a single row(COVERING COLS)
+            for(int j = 1;j <= i;j++){
+                    System.out.print(j+" ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("\n__________Floyd's Triangle_________\n");
+
+        // 8. Floyd's Triangle: 
+        // It will print series of star from one row to another row(COVERING ROWS)
+        for(int i = 1;i <= row;i++){
+            // It will print n stars in a single row(COVERING COLS)
+            for(int j = 1;j <= i;j++){
+                    System.out.print(j*(i-1)+" ");
+            }
+            System.out.println();
+        }
 
         sc.close();
     }
