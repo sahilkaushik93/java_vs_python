@@ -27,6 +27,8 @@ public class Prog6 {
          * row8: 1 star + 6 space + 1 star
          * 
          * The pattern is repeating inversly after 4th row 
+         * Pattern: [(i)star + (8-2i)space + (i)star]
+         * Here, space is 2(n-i) => 2(4-i) => 8-2i (As n is 4 in this case).
          */
 
         // First 4 rows:
